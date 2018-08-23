@@ -4,7 +4,12 @@ var router = express.Router();
 
 router.get("/", function (req, res) {
     burger.selectAll(function (data) {
-        res.render("index");
+        // console.log(data);
+        var output = {
+            burger: data
+        };
+        // console.log(output);
+        res.render("index", output);
     });
 });
 
@@ -23,9 +28,7 @@ router.post("/", function (req, res) {
 
 router.put("/:id", function (req, res) {
     var id = req.params.id;
-
-    console.log(id);
-
+    // console.log(id);
     burger.updateOne(id, function () {
         res.redirect("/");
     });
