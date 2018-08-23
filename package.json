@@ -4,7 +4,8 @@
   "description": "## Overview In this homework assignment for Rutgers Coding Bootcamp, students were asked to create a burger logger with MySQL, Node, Express, Handlebars and a homemade ORM, all while following the MVC design pattern.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
