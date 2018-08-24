@@ -7,12 +7,12 @@ var burger = {
     });
   },
 
-  insertOne: function (tableName, value, callback) {
+  insertOne: function (value, callback) {
     orm.insertOne("burgers", value, function (res) {
       callback(res);
     });
   },
-  updateOne: function (tableName, idValue, callback) {
+  updateOne: function (idValue, callback) {
     orm.updateOne("burgers", idValue, function (res) {
       callback(res);
     });
